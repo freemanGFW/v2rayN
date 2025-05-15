@@ -21,6 +21,6 @@ jobs:
           git remote add upstream https://github.com/2dust/v2rayN
           git fetch upstream
           git checkout master
-          git merge upstream/master --allow-unrelated-histories
+          git merge upstream/dev --allow-unrelated-histories
 
    
