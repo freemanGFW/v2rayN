@@ -23,4 +23,11 @@ jobs:
           git checkout master
           git merge upstream/dev --allow-unrelated-histories
 
+      - name: Resolve merge conflicts
+        run: |
+          git merge --strategy-option=theirs upstream/main || true
+          git add .
+          git commit -m "Resolve merge conflicts automatically" || true
+
+
    
